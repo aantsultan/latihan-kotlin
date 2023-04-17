@@ -1,0 +1,29 @@
+plugins {
+    // Apply the org.jetbrains.kotlin.jvm Plugin to add support for Kotlin.
+    id 'org.jetbrains.kotlin.jvm' version "${kotlinJvmVersion}"
+}
+
+allprojects {
+    apply plugin: 'org.jetbrains.kotlin.jvm'
+
+    repositories {
+        // Use Maven Central for resolving dependencies.
+        mavenCentral()
+    }
+
+    dependencies {
+        // Use the Kotlin JUnit 5 integration.
+        testImplementation 'org.jetbrains.kotlin:kotlin-test-junit5'
+
+        // Use the JUnit 5 integration.
+        testImplementation 'org.junit.jupiter:junit-jupiter-engine:' + junitJupiterVersion
+
+        // This dependency is used by the application.
+        implementation 'com.google.guava:guava:31.1-jre'
+    }
+
+    tasks.named('test') {
+        // Use JUnit Platform for unit tests.
+        useJUnitPlatform()
+    }
+}
