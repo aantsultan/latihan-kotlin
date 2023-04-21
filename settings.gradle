@@ -9,3 +9,4 @@
 
 rootProject.name = 'latihan-kotlin'
 include 'latihan-kotlin-basic'
+include 'latihan-kotlin-oop'
