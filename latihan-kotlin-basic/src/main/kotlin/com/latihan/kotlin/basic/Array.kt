@@ -4,7 +4,7 @@ fun main() {
 
     var names: Array<String> = arrayOf("Aant", "berhobi", "Games")
 
-    names.set(1, "Elaina")
+    names.set(1, "Elkia")
 
     println(names)
     println(names[0])
