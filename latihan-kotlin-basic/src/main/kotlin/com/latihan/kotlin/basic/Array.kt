@@ -2,7 +2,7 @@ package com.latihan.kotlin.basic
 
 fun main() {
 
-    var names: Array<String> = arrayOf("Aant", "berhobi", "Games")
+    var names: Array<String> = arrayOf("Aan", "berhobi", "Games", "dan", "Anime")
 
     names.set(1, "Elkia")
 
